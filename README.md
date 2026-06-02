@@ -7,11 +7,6 @@
 ## Overview
 **Project Shattered-Glass** is a forensic investigation into a hardware-anchored implant that achieves permanent persistence on modern iOS devices. By subverting the physical identity (FDR) and re-anchoring the root-of-trust in the silicon registers, the implant renders all software-based restores, including DFU, obsolete.
 
-##  The Forensic Engineering Workstation
-The centerpiece of this disclosure is the interactive **Forensic Engineering Workstation**. 
-
-### **[>> CLICK HERE TO LAUNCH THE INTERACTIVE DASHBOARD <<](https://htmlpreview.github.io/?https://github.com/JGOYD/Shattered-Glass/blob/main/index.html)**
-
 
 ### Features:
 - **Visualizes the Exploit Chain**: High-precision mapping of the FDR -> SEP -> Kernel hijack.
