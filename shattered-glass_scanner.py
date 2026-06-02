@@ -3,7 +3,7 @@ import base64
 import argparse
 import hashlib
 
-# PROJECT SHATTEREDGLASS IOCHUNTER v2.0 (DeepSeek-V4-Flash Patched)
+# PROJECT SHATTEREDGLASS IOCHUNTER v2.0 
 # Advanced detection for hardware-anchored persistence and activation bypass
 
 IO_PATTERNS = {
