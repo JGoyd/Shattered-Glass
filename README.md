@@ -8,11 +8,6 @@
 **Project Shattered-Glass** is a forensic investigation into a hardware-anchored implant that achieves permanent persistence on modern iOS devices. By subverting the physical identity (FDR) and re-anchoring the root-of-trust in the silicon registers, the implant renders all software-based restores, including DFU, obsolete.
 
 
-### Features:
-- **Visualizes the Exploit Chain**: High-precision mapping of the FDR -> SEP -> Kernel hijack.
-- **Verification Engine**: Functional drag-and-drop ingestion to scan sysdiagnose logs for fingerprints (7u7u, SKI hashes, SealDate anomalies) in real-time.
-- **Telemetry Monitoring**: Real-time status of hijacked J-series registers and the unsealed eCfg bond.
-
 ## Key Technical Findings
 - **Hardware Persistence**: Survived deep DFU restore via FDR/NVRAM register manipulation.
 - **Bypass**: Utilizes legacy activation certificates (2007-2014) and synthetic "7u7u" binary wildcard tickets.
