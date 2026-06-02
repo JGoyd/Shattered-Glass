@@ -4,7 +4,7 @@
 ![Type](https://img.shields.io/badge/sector-Forensics-red.svg)
 
 ## Overview
-**Project ShatteredGlass** is a forensic investigation into a hardware-anchored implant that achieves persistence on modern iOS devices (iPhone 14 Pro Max/iPhone 15 Pro) by subverting the device's identity (FDR) and activation sequence.
+**Project ShatteredGlass** is a forensic investigation into a hardware-anchored implant that achieves persistence on modern iOS devices by subverting the device's identity (FDR) and activation sequence.
 
 ## Key Findings
 - **Persistence**: Survives DFU restore via NVRAM/FDR-level identity spoofing.
