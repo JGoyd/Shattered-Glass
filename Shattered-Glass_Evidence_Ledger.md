@@ -1,4 +1,4 @@
-# Project ShatteredGlass: Evidence Ledger & Technical Proof
+# Project Shattered-Glass: Evidence Ledger & Technical Proof
 
 This document provides the raw technical artifacts and hex-level comparisons that substantiate the hardware-level persistence and activation bypass on the iPhone 14 Pro Max (15,3).
 
