@@ -7,14 +7,16 @@
 ## Overview
 **Project Shattered-Glass** is a forensic investigation into a hardware-anchored implant that achieves permanent persistence on modern iOS devices. By subverting the physical identity (FDR) and re-anchoring the root-of-trust in the silicon registers, the implant renders all software-based restores, including DFU, obsolete.
 
+##  The Forensic Engineering Workstation
+The centerpiece of this disclosure is the interactive **Forensic Engineering Workstation**. 
 
-### 🔗 [LIVE Detectection Dashboard (GitHub Pages)](https://jgoyd.github.io/Shattered-Glass/Shattered-Glass_Dashboard.html)
-> Note: If viewing directly in the repository, GitHub will show the raw code. Use the link above for the interactive experience.
+### **[>> CLICK HERE TO LAUNCH THE INTERACTIVE DASHBOARD <<](https://htmlpreview.github.io/?https://github.com/JGOYD/Shattered-Glass/blob/main/index.html)**
 
-This diagnostic tool allows researchers to:
-- **Visualize the Exploit Chain**: High-precision mapping of the FDR -> SEP -> Kernel hijack.
-- **Verify Integrity**: A functional drag-and-drop engine to ingest sysdiagnose logs and scan for known fingerprints (7u7u, SKI hashes, SealDate anomalies) in real-time.
-- **Track Telemetry**: Real-time monitoring of hijacked J-series registers and the unsealed eCfg encryption bond.
+
+### Features:
+- **Visualizes the Exploit Chain**: High-precision mapping of the FDR -> SEP -> Kernel hijack.
+- **Verification Engine**: Functional drag-and-drop ingestion to scan sysdiagnose logs for fingerprints (7u7u, SKI hashes, SealDate anomalies) in real-time.
+- **Telemetry Monitoring**: Real-time status of hijacked J-series registers and the unsealed eCfg bond.
 
 ## Key Technical Findings
 - **Hardware Persistence**: Survived deep DFU restore via FDR/NVRAM register manipulation.
@@ -28,9 +30,9 @@ This diagnostic tool allows researchers to:
 - /Tools: shattered-glass_scanner.py (v2.0) for automated IoC detection.
 
 ## Detection
-Security researchers can verify their own device integrity by opening the **Engineering Workstation (HTML)** and dropping their sysdiagnose, or by running the CLI scanner:
+Security researchers can verify their own device integrity by dropping a sysdiagnose into the Workstation (index.html) or by running the CLI tool:
 `ash
-python tools/shattered-glass_scanner.py path/to/sysdiagnose
+python tools/shattered-glass-scanner.py path/to/sysdiagnose
 `
 
 ---
