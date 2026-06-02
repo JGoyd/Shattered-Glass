@@ -21,7 +21,7 @@
 
 ## Detection
 Security researchers can verify their own device integrity by dropping a sysdiagnose into the Workstation (index.html) or by running the CLI tool:
-`ash
+`
 python tools/shattered-glass-scanner.py path/to/sysdiagnose
 `
 
